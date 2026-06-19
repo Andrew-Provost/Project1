@@ -20,6 +20,9 @@ header {
 .hero {
     text-align: center;
     padding: 60px 20px;
+    background-image: url("Images/hero-background.png");
+    background-size: cover;
+    background-position: center;
 }
 .hero h1 {
     font-size: 48px;
@@ -33,7 +36,6 @@ header {
     background-color: #111633;
     border: 1px solid #2D356B;
     padding: 20px;
-    margin: 15px;
     border-radius: 8px;
     width: 180px;
 }
@@ -42,4 +44,24 @@ header {
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
+}
+.content-section {
+    padding: 40px 60px;
+}
+.content-section h2 {
+    margin-bottom: 25px;
+}
+footer {
+    background-color: #111633;
+    padding: 20px;
+    border-top: 1px solid #2D356B;
+    text-align: center;
+}
+.auth-form{
+    background-color: #111633;
+    border: 1px solid #2D356B;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 40px auto;
 }
