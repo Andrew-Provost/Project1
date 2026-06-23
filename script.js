@@ -53,3 +53,15 @@ function divideNumbers (a, b) {
     return a / b;
 }
 console.log(divideNumbers(6, 3));
+function describeTrade(result) {
+    if (result > 0) {
+        return "Winning trade";
+    } else if (result < 0) {
+        return "Losing trade";
+    } else {
+        return "Break-even trade";
+    }
+}
+console.log(describeTrade(25));
+console.log(describeTrade(-10));
+console.log(describeTrade(0));
