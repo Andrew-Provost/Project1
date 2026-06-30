@@ -1,18 +1,17 @@
-function calculate(a, b, operation) {
-    if (operation === "add") {
-        return a + b;
-    } else if (operation === "subtract") {
-        return a - b;
-    } else if (operation === "multiply") {
-        return a * b;
-    } else if (operation === "divide") {
-        return a / b;
-    } else {
-        return "Unknown operation";
-    }
+const display = document.getElementById("display");
+
+function addToDisplay(value) {
+    display.value = display.value + value;
 }
 
-console.log(calculate(10, 5, "add"));
-console.log(calculate(10, 5, "subtract"));
-console.log(calculate(10, 5, "multiply"));
-console.log(calculate(10, 5, "divide"));
+function clearDisplay() {
+    display.value = "";
+}
+
+function deleteLast() {
+    display.value = display.value.slice(0, -1);
+}
+
+function calculateResult() {
+    display.value = eval(display.value);
+}
